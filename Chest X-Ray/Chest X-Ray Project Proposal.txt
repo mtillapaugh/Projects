@@ -1,19 +1,40 @@
 ﻿Proposal
 
 
-Machine Learning and AI provides ways to quickly identify or classify objects in images given a large amount of data - much quicker than any one person would be able to. In the medical field AI has the potential to revolutionize how accurately and how quickly we can infer data from various types of images. In particular it can be used to identify diseases or other medical related issues that can be found in traditional X-Ray images.
+Machine Learning and AI provides ways to quickly identify or classify objects in images 
+given a large amount of data - much quicker than any one person would be able to. In the 
+medical field AI has the potential to revolutionize how accurately and how quickly we can 
+infer data from various types of images. In particular it can be used to identify diseases 
+or other medical related issues that can be found in traditional X-Ray images.
 
 
-Convoluted Neural Networks (CNN) have allowed us to rapidly increase this capability to classify images or detect objects in images. In the medical field this can lead to increased efficiency and/or accuracy when diagnosing issues with a patient. This offers more time for doctors to spend with patients while allowing CNN’s to help identify issues concurrently.
+Convoluted Neural Networks (CNN) have allowed us to rapidly increase this capability to 
+classify images or detect objects in images. In the medical field this can lead to increased 
+efficiency and/or accuracy when diagnosing issues with a patient. This offers more time for 
+doctors to spend with patients while allowing CNN’s to help identify issues concurrently.
 
 
-According to the World Health Organization (WHO), pneumonia kills about 2 million children under 5 years old every year and is consistently estimated as the single leading cause of childhood mortality (Ruden et al., 2008). It is especially an issue in developing countries where immediate treatment is needed but rapid radiological interpretation is not always available. Therefore an accurate CNN model which provides rapid results can be very beneficial in these areas where diagnosis is not as timely.
+According to the World Health Organization (WHO), pneumonia kills about 2 million children under 
+5 years old every year and is consistently estimated as the single leading cause of childhood 
+mortality (Ruden et al., 2008). It is especially an issue in developing countries where immediate 
+treatment is needed but rapid radiological interpretation is not always available. Therefore an 
+accurate CNN model which provides rapid results can be very beneficial in these areas where diagnosis 
+is not as timely.
 
 
-The dataset can be found here and consists of 5,856 X-Ray images labeled as ‘Normal’, ‘Bacterial Pneumonia’, or ‘Viral Pneumonia’. The dataset is broken into a testing, validation, and training set however I plan to combine all the images and randomly split the images into testing and training sets. The images will then be added into an array and resized to 256x256 pixels (since the images come in all different sizes). The images will then be scaled between 0 and 1 so that it will be in a good format for the CNN models.
+The dataset can be found here and consists of 5,856 X-Ray images labeled as ‘Normal’, ‘Bacterial 
+Pneumonia’, or ‘Viral Pneumonia’. The dataset is broken into a testing, validation, and training set 
+however I plan to combine all the images and randomly split the images into testing and training sets. 
+The images will then be added into an array and resized to 256x256 pixels (since the images come in 
+all different sizes). The images will then be scaled between 0 and 1 so that it will be in a good 
+format for the CNN models.
 
 
-I will start with using the methods taught in the Deep Learning portion of Thinkful’s curriculum to establish a baseline model. Then I will optimize hyperparameters of this model to get the best performing Tensorflow model. This optimized model will be my first reference. 
+I will start with using the methods taught in the Deep Learning portion of Thinkful’s curriculum to 
+establish a baseline model. Then I will optimize hyperparameters of this model to get the best performing 
+Tensorflow model. This optimized model will be my first reference. 
 
 
-Next I will expand this and apply Transfer Learning and Random Initialization to try to improve the model results. There are a number of existing pre-trained Transfer Learning models to choose from so I will explore using the first layers of these models and build new layers to help classify these X-Ray images.
+Next I will expand this and apply Transfer Learning and Random Initialization to try to improve the model 
+results. There are a number of existing pre-trained Transfer Learning models to choose from so I will 
+explore using the first layers of these models and build new layers to help classify these X-Ray images.
